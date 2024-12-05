@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: var(--dark-color-100);
+}
+
+:root {
+    --dark-color-100: #121212;
+    --dark-color-80: #282828;
+    --dark-color-60: #3f3f3f;
+    --dark-color-40: #575757;
+    --dark-color-20: #717171;
+    --dark-color-0: #8b8b8b;
+    --light-color-100: #fff;
+    --main-color: #382bf0;
+    --success-color: #076d2f;
+}

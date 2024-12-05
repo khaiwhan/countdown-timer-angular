@@ -1,0 +1,77 @@
+<div class="countdown">
+  <div class="hour">
+    <h1>HOUR</h1>
+    <div class="digits">
+      <div class="digit">
+        @if(!startState){
+        <fa-icon [icon]="caretUp" (click)="incrementDigit1()"></fa-icon>
+        }
+        <input type="text" [(ngModel)]="digit1">
+        @if(!startState){
+        <fa-icon [icon]="caretDown" [class.disabled]="digit1 == 0" (click)="decrementDigit1()"></fa-icon>
+        }
+      </div>
+      <div class="digit">
+        @if(!startState){
+        <fa-icon [icon]="caretUp" (click)="incrementDigit2()"></fa-icon>
+        }
+        <input type="text" [(ngModel)]="digit2">
+        @if(!startState){
+        <fa-icon [icon]="caretDown" [class.disabled]="digit2 == 0" (click)="decrementDigit2()"></fa-icon>
+        }
+      </div>
+    </div>
+  </div>
+  <div class="minute">
+    <h1>MINUTE</h1>
+    <div class="digits">
+      <div class="digit">
+        @if(!startState){
+        <fa-icon [icon]="caretUp" (click)="incrementDigit3()"></fa-icon>
+        }
+        <input type="text" [(ngModel)]="digit3">
+        @if(!startState){
+        <fa-icon [icon]="caretDown" [class.disabled]="digit3 == 0" (click)="decrementDigit3()"></fa-icon>
+        }
+      </div>
+      <div class="digit">
+        @if(!startState){
+        <fa-icon [icon]="caretUp" (click)="incrementDigit4()"></fa-icon>
+        }
+        <input type="text" [(ngModel)]="digit4">
+        @if(!startState){
+        <fa-icon [icon]="caretDown" [class.disabled]="digit4 == 0" (click)="decrementDigit4()"></fa-icon>
+        }
+      </div>
+    </div>
+  </div>
+  <div class="second">
+    <h1>SECOND</h1>
+    <div class="digits">
+      <div class="digit">
+        @if(!startState){
+        <fa-icon [icon]="caretUp" (click)="incrementDigit5()"></fa-icon>
+        }
+        <input type="text" [(ngModel)]="digit5">
+        @if(!startState){
+        <fa-icon [icon]="caretDown" [class.disabled]="digit5 == 0" (click)="decrementDigit5()"></fa-icon>
+        }
+      </div>
+      <div class="digit">
+        @if(!startState){
+        <fa-icon [icon]="caretUp" (click)="incrementDigit6()"></fa-icon>
+        }
+        <input type="text" [(ngModel)]="digit6">
+        @if(!startState){
+        <fa-icon [icon]="caretDown" [class.disabled]="digit6 == 0" (click)="decrementDigit6()"></fa-icon>
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="button-group">
+  <button (click)="startTime()">START</button>
+  <button (click)="stopTime()">STOP</button>
+  <button (click)="resetTime()">RESET</button>
+</div>

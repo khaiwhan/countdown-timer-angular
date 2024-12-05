@@ -1,0 +1,88 @@
+.countdown {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    @media screen and (max-width: 1350px) {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .hour,
+    .minute,
+    .second {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .digits {
+        display: flex;
+        border: 2px solid #fff;
+        border-radius: 10px;
+    }
+
+    .digit {
+        margin: 2px;
+        width: 200px;
+        height: 250px;
+        background-color: var(--dark-color-80);
+        border-radius: 10px;
+        color: var(--dark-color-0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        input {
+            background-color: transparent;
+            border: none;
+            font-size: 50px;
+            display: inline-block !important;
+            width: 100%;
+            text-align: center;
+            pointer-events: none;
+        }
+    }
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    
+
+    button {
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        color: var(--white-color);
+        border: none;
+        margin: 0 5px;
+    }
+
+    button:hover {
+        opacity: .5;
+    }
+
+    button:nth-child(1) {
+        background-color: var(--main-color);
+    }
+
+    button:nth-child(2) {
+        background-color: red;
+    }
+
+    button:nth-child(3) {
+        background-color: orange;
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .5;
+}
